@@ -1,0 +1,478 @@
+﻿body
+{
+	font-family: Calibri;
+}
+
+div
+{
+}
+
+.noresize {
+	resize: none;
+}
+
+#divAddPasswords
+{
+    border: dotted;
+    border-color: green;
+    width: 810px;
+}
+
+#divViewAgenda
+{
+	width: 850px;
+}
+
+.div-hideme
+{
+	display: none;
+}
+
+#divHyper1
+{
+
+}
+
+
+#divlblMessage
+{
+	display: none;
+	width: 800px;
+	height: 400px;
+}
+
+#divSpacer, #divLanguageBar
+{
+	display: none;
+}
+
+input[type="text"] 
+{
+	font-family: Calibri;
+}
+
+textarea
+{
+	font-family: Calibri;
+}
+
+#txtFullDescription
+{
+	font-family: Calibri;
+}
+
+#divForm
+{
+	width: 800px;
+	height: 2025px;
+}
+
+#divReportDetails
+{
+	clear: both;
+}
+
+.div-table
+{
+    display:table;         
+    width:auto;         
+    background-color:#eee;         
+    border:1px solid  #666666;         
+    border-spacing:5px;
+}
+
+.div-table-row
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+}
+
+.div-table-row-grid-view {
+	clear: both;
+	display: block;
+	width: auto;
+	line-height: 25px;
+	background-color: #ccc;
+	padding: 2px;
+	/*
+	height: auto;
+	overflow-y: auto;
+	*/
+}
+
+.div-table-rowReportDetails
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+	height: 300px;
+}
+
+.div-table-rowCommittee
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+	height: 100px;
+}
+
+.div-table-rowCommitteeFullRowShort
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+	height: 30px;
+}
+
+.div-table-rowCommitteeFullRowTall
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+	height: 250px;
+}
+
+.div-table-rowCommitteeFullRowNotAsShort
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+	height: 60px;
+}
+
+.div-table-rowhidden
+{
+	display: none;
+	width:auto;
+	clear:both;
+	line-height: 25px;
+}
+
+.div-table-row2
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+	line-height: 100px;
+}
+
+.div-table-col
+{
+	float:left;
+	display:table-column;         
+	width: 200px;         
+	background-color:#ccc;
+	height: 30px;
+}
+
+.div-table-colfull
+{
+	float:left;
+	display: inline-block;
+	width: 800px;
+	background-color:green;
+	height: 600px;
+	overflow-y: auto ;
+}
+
+.div-table-colButtons
+{
+	float:left;
+	display:table-column;         
+	width: 300px;         
+	background-color:#ccc;
+	height: 30px;
+}
+
+.div-table-colCommittee
+{
+	float:left;
+	display:table-column;         
+	width: 250px;         
+	background-color:#ccc;
+	height: 100px;
+}
+
+.div-table-colCommitteeFullRowLabels
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 80px;
+}
+
+.div-table-colCommitteeFullRowShort
+{
+	float:left;
+	display:table-column;
+	width: 800px;
+	background-color:#ccc;
+	height: 30px;
+}
+
+.div-table-colCommitteeFullRowNotAsShort
+{
+	float:left;
+	display:table-column;
+	width: 800px;
+	background-color:#ccc;
+	height: 60px;
+}
+
+.div-table-colCommitteeFullRow
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 300px;
+	overflow-y: auto;
+}
+
+.div-table-colCommitteeFullRow2
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 255px;
+	overflow-y: auto;
+}
+
+.div-table-colCommitteeFullRow2TotalHours
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 30px;
+	overflow-y: auto;
+}
+
+.div-table-colCommitteeFullRowNotAsTall2
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 260px;
+}
+
+.div-table-colCommitteeFullRowNotAsTall
+{
+	float:left;
+	display:table-column;         
+	width: 800px;         
+	background-color:#ccc;
+	height: 250px;
+	overflow-y: auto;
+}
+
+.div-table-colRunningTotals
+{
+	float:left;
+	display:table-column;         
+	width: 600px;         
+	background-color:#ccc;
+	height: 30px;
+}
+
+.div-table-col2RunningTotals
+{
+	float:left;
+	display:table-column;         
+	width: 200px;         
+	background-color:#ccc;  
+	height: 30px;
+}
+
+.div-table-col2
+{
+	float:left;
+	display:table-column;         
+	width: 600px;         
+	background-color: #ccc;
+	height: 30px;
+}
+
+.div-table-colpanel
+{
+	float:left;
+	display:table-column;         
+	width: 550px;         
+	background-color:#ccc;  
+	height: 30px;
+}
+
+.div-table-col2Buttons
+{
+	float:left;
+	display:table-column;         
+	width: 500px;         
+	background-color:#ccc;  
+	height: 30px;
+}
+
+.div-table-col2Committee
+{
+	float:left;
+	display:table-column;         
+	width: 365px;         
+	background-color:#ccc;  
+	height: 100px;
+}
+
+.div-table-col3Committee
+{
+	float:left;
+	display:table-column;         
+	width: 185px;         
+	background-color:#ccc;  
+	height: 100px;
+}
+
+.div-table-colCouncillorPicture
+{
+	float:left;
+	display:table-column;         
+	width:200px;         
+	background-color:#ccc;
+	height: 30px;
+}
+
+.div-table-col2BrowseCouncillorPicture
+{
+	float:left;
+	display:table-column;         
+	width: 600px;         
+	background-color:#ccc;  
+	height: 30px;
+}
+
+.div-table-col2Tallerer
+{
+	float: left;
+	display: table-column;
+	width: 600px;
+	background-color: #ccc;
+	height: 100px;
+}
+
+.div-table-colTaller {
+	float: left;
+	display: table-column;
+	width: 200px;
+	background-color: #ccc;
+	height: 100px;
+}
+
+.div-table-colTaller2
+{
+	float:left;
+	display:table-column;         
+	width: 550px;         
+	background-color:#ccc;
+	height: 100px;
+}
+
+.div-table-colTall{
+  float:left;
+  display:table-column;         
+  width:200px;         
+  background-color:#ccc;  
+  height: 50px;
+}
+
+.div-table-col200
+{
+	float:left;
+	display:table-column;         
+	width: 790px;         
+	background-color:#ccc;  
+}
+
+.div-table-col200lblMessage
+{
+	float:left;
+	display: inline;         
+	width: 800px;         
+	background-color:#ccc;  
+}
+
+.div-table-col2Right
+{
+	float:left;
+	display:table-column;
+	width:350px;
+	background-color:#ccc;
+	text-align: right;
+}
+
+.div-table-col2Tall
+{
+	float:left;
+	display:table-column;         
+	width:350px;         
+	background-color:#ccc;  
+	height: 50px;
+}
+
+.div-table-col3
+{
+  float:left;
+  display:table-column;         
+  width:550px;         
+  background-color:#ccc;  
+}
+
+.divalignright
+{
+	float: right;
+}
+
+.wideTextBoxes
+{
+	 Width: 345px;
+	 font-family: Calibri;
+}
+
+#h3PageTitle
+{
+	display: none;
+}
+
+#spanUsername, #spanPassword
+{
+    border: solid;
+    border-color: green;
+}
+
+.maxWidthGrid
+{
+    min-width: 600px;
+    max-width:  800px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.gridViewWidth
+{
+        background-color: goldenrod;
+    width: 800px;
+    height:  800px;
+}
+
+.gridScroll
+{
+	overflow: auto;
+        background-color: purple;
+}

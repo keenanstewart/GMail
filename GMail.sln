@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMail (Load WordSmith)", "GMail\GMail (Load WordSmith).csproj", "{EE068FE9-20C9-476F-B638-B5B7CEEDDF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordDroid", "WordDroid\WordDroid.csproj", "{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAPI", "WordAPI\WordAPI.csproj", "{968B6CC0-58C9-46CD-97B5-10C66A0D5A90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE068FE9-20C9-476F-B638-B5B7CEEDDF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE068FE9-20C9-476F-B638-B5B7CEEDDF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE068FE9-20C9-476F-B638-B5B7CEEDDF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE068FE9-20C9-476F-B638-B5B7CEEDDF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F59ABB-DE0A-45EE-A4D0-92BADDDAAC70}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{968B6CC0-58C9-46CD-97B5-10C66A0D5A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968B6CC0-58C9-46CD-97B5-10C66A0D5A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968B6CC0-58C9-46CD-97B5-10C66A0D5A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968B6CC0-58C9-46CD-97B5-10C66A0D5A90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FBCE49F-724D-4F75-A049-BBFBC3456032}
+	EndGlobalSection
+EndGlobal
