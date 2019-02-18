@@ -35,7 +35,7 @@ namespace GMail
         }
 
         protected void cmdLogin_Click(object sender, EventArgs e)
-        {
+        { /* */
             if (DatabaseAccess.VerifyLogin(txtUsername.Text, txtPassword.Text))
             {
                 Session["loggedin"] = true;
@@ -48,7 +48,7 @@ namespace GMail
             {
                 lblMessage.Visible = true;
                 lblMessage.Text = "Unsuccessful login attempt.  Username and passwords are case sensitive.";
-            }
+            } /* */
         }
 
         protected void lbLogout_Click(object sender, EventArgs e)

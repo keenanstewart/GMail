@@ -17,8 +17,9 @@ namespace GMail.classes
 {
     public class DatabaseAccess
     {
-        public static bool VerifyLogin(string strUsername, string strPassword)
-        {
+		public static bool VerifyLogin(string strUsername, string strPassword)
+		//public static string VerifyLogin(string strUsername, string strPassword)
+		{
             string strSchema = WebConfigurationManager.AppSettings["passschema"];
             //string strtblPassword = WebConfigurationManager.AppSettings["tblPassword"];
             string strtblUsers = WebConfigurationManager.AppSettings["tblUsers"];
@@ -27,36 +28,47 @@ namespace GMail.classes
 
             string strQuery = "use [www]; SELECT * FROM [" + strSchema + "].[" + strtblUsers + "] ";
             strQuery += "WHERE [username] = @u AND [Password] = @p;";
+			try
+			{
+				using (SqlConnection con1 = new SqlConnection(strConn))
+				{
+					using (SqlCommand cmd1 = new SqlCommand(strQuery, con1))
+					{
+						try
+						{
+							con1.Open();
+							cmd1.Parameters.AddWithValue("@u", strUsername);
+							cmd1.Parameters.AddWithValue("@p", strPassword);
 
-            using (SqlConnection con1 = new SqlConnection(strConn))
-            {
-                using (SqlCommand cmd1 = new SqlCommand(strQuery, con1))
-                {
-                    try
-                    {
-                        con1.Open();
-                        cmd1.Parameters.AddWithValue("@u", strUsername);
-                        cmd1.Parameters.AddWithValue("@p", strPassword);
+							SqlDataReader read1 = cmd1.ExecuteReader();
 
-                        SqlDataReader read1 = cmd1.ExecuteReader();
+							while (read1.Read())
+							{
+								if ((read1["Username"].ToString() == strUsername) &&
+								    (read1["Password"].ToString() == strPassword))
+									//return "match found true";
+									return true;
+							}
 
-                        while (read1.Read())
-                        {
-                            if ((read1["Username"].ToString() == strUsername) &&
-                                (read1["Password"].ToString() == strPassword))
-                                return true;
-                        }
+							con1.Close();
+						}
 
-                        con1.Close();
-                    }
+						catch (Exception)
+						{
+						}
+					}
+				}
+			}
 
-                    catch (Exception )
-                    {
-                    }
-                }
-            }
+			catch (Exception ex)
+			{
+				//return "Exception caught: " + ex.Message.ToString() + ":" +
+				//	strConn + ":" + strQuery;
+				return false;
+			}
 
-            return false;
+			//return "false";
+			return false;
         }
 
         public static string DBTable()
